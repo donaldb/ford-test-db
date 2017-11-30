@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 class AddUserForm extends React.Component {
 	createUser(event) {
@@ -22,7 +23,6 @@ class AddUserForm extends React.Component {
   render() {
     return (
         <div>
-          <h2>Test Users</h2>
           <form ref={(input) => this.userForm = input} className="user-edit" onSubmit={(e) => this.createUser(e)}>
             <input type="text" placeholder="Consumer ID" ref={(input) => this.CID = input} />
             <input type="text" placeholder="Email Address" ref={(input) => this.EM = input} />
@@ -42,7 +42,7 @@ class AddUserForm extends React.Component {
 }
 
 AddUserForm.propTypes = {
-	addUser: React.PropTypes.func.isRequired
+	addUser: PropTypes.func.isRequired
 };
 
 export default AddUserForm;
