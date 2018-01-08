@@ -24,17 +24,50 @@ class AddUserForm extends React.Component {
     return (
         <div>
           <form ref={(input) => this.userForm = input} className="user-edit" onSubmit={(e) => this.createUser(e)}>
-            <input type="text" placeholder="Consumer ID" ref={(input) => this.CID = input} />
-            <input type="text" placeholder="Email Address" ref={(input) => this.EM = input} />
-            <input type="text" placeholder="Campaign Code" ref={(input) => this.CRI = input} />
-            <input type="text" placeholder="Country Code" ref={(input) => this.CCC = input} />
-            <input type="text" placeholder="Dealer Code" ref={(input) => this.DC = input} />
-            <input type="text" placeholder="Language" ref={(input) => this.L = input} />
-            <input type="text" placeholder="Brand" ref={(input) => this.BR = input} />
-            <input type="text" placeholder="Unsub String Values" ref={(input) => this.Unsub_string_values = input} />
-            <input type="text" placeholder="Email String Values" ref={(input) => this.Email_string_values = input} />
-            <input type="text" placeholder="Unsub String" ref={(input) => this.Unsub_String = input} />
-            <input type="text" placeholder="Update Email String" ref={(input) => this.Update_Email_String = input} />
+            <div class="field">
+              <label htmlFor="CID">Consumer ID</label>
+              <input pattern=".+" id="CID" type="text" placeholder="Consumer ID" ref={(input) => this.CID = input} />
+            </div>
+            <div class="field">
+              <label htmlFor="EM">Email Address</label>
+              <input pattern=".+" id="EM" type="text" placeholder="Email Address" ref={(input) => this.EM = input} />
+            </div>
+            <div class="field">
+              <label htmlFor="CRI">Campaign Code</label>
+              <input pattern=".+" id="CRI" type="text" placeholder="Campaign Code" ref={(input) => this.CRI = input} />
+            </div>
+            <div class="field">
+              <label htmlFor="CCC">Country Code</label>
+              <input pattern=".+" id="CCC" type="text" placeholder="Country Code" ref={(input) => this.CCC = input} />
+            </div>
+            <div class="field">
+              <label htmlFor="DC">Dealer Code</label>
+              <input pattern=".+" id="DC" type="text" placeholder="Dealer Code" ref={(input) => this.DC = input} />
+            </div>
+            <div class="field">
+              <label htmlFor="L">Language</label>
+              <input pattern=".+" id="L" type="text" placeholder="Language" ref={(input) => this.L = input} />
+            </div>
+            <div class="field">
+              <label htmlFor="BR">Brand</label>
+              <input pattern=".+" id="BR" type="text" placeholder="Brand" ref={(input) => this.BR = input} />
+            </div>
+            <div class="field">
+              <label htmlFor="Unsub_string_values">Unsub String Values</label>
+              <input pattern=".+" id="Unsub_string_values" type="text" placeholder="Unsub String Values" ref={(input) => this.Unsub_string_values = input} />
+            </div>
+            <div class="field">
+              <label htmlFor="Email_string_values">Email String Values</label>
+              <input pattern=".+" id="Email_string_values" type="text" placeholder="Email String Values" ref={(input) => this.Email_string_values = input} />
+            </div>
+            <div class="field">
+              <label htmlFor="Unsub_String">Unsub String</label>
+              <input pattern=".+" id="Unsub_String" type="text" placeholder="Unsub String" ref={(input) => this.Unsub_String = input} />
+            </div>
+            <div class="field">
+              <label htmlFor="Update_Email_String">Update Email String</label>
+              <input pattern=".+" id="Update_Email_String" type="text" placeholder="Update Email String" ref={(input) => this.Update_Email_String = input} />
+            </div>
           </form>
         </div>
     )
