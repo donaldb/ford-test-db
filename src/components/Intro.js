@@ -4,7 +4,7 @@ import AddUserForm from './AddUserForm';
 class Intro extends React.Component {
     render() {
       return (
-          <div>
+          <div id="addUserForm">
             <h2>Test Users</h2>
             <AddUserForm addUser={this.props.addUser} />
           </div>
