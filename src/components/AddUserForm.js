@@ -22,7 +22,8 @@ class AddUserForm extends React.Component {
 	}
   render() {
     return (
-        <div>
+        <div id="addUserForm">
+          <h2>Test Users</h2>
           <form ref={(input) => this.userForm = input} className="user-edit" onSubmit={(e) => this.createUser(e)}>
             <div class="inputField">
               <label htmlFor="CID">Consumer ID</label>
@@ -68,6 +69,7 @@ class AddUserForm extends React.Component {
               <label htmlFor="Update_Email_String">Update Email String</label>
               <input pattern=".+" id="Update_Email_String" type="text" placeholder="Update Email String" ref={(input) => this.Update_Email_String = input} />
             </div>
+            <button type="submit">+ Add User</button>
           </form>
         </div>
     )
